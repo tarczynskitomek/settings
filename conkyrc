@@ -1,0 +1,72 @@
+# conky configuration
+#
+# The list of variables has been removed from this file in favour
+# of keeping the documentation more maintainable.
+# Check http://conky.sf.net for an up-to-date-list.
+#
+# For ideas about how to modify conky, please see:
+# http://conky.sourceforge.net/variables.html
+#
+# For help with conky, please see:
+# http://conky.sourceforge.net/documentation.html
+#
+# Enjoy! :)
+##############################################
+# Settings
+##############################################
+background yes
+use_xft yes
+xftfont Liberation Sans:size=9
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+#own_window_argb_visual yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 200
+maximum_width 640
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color 656667
+default_shade_color 000000
+default_outline_color 828282
+alignment top_right
+gap_x 12
+gap_y 56
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+##############################################
+#  Output
+##############################################
+TEXT
+S Y S T E M    I N F O
+${hr}
+Host:$alignr$nodename
+Uptime:$alignr$uptime
+RAM:$alignr$mem/$memmax
+${memgraph 30,255 AAF5D0 00B35B}
+Swap usage:$alignr$swap/$swapmax
+Disk usage:$alignr${fs_used /}/${fs_size /}
+CPU0 usage:$alignr${cpu cpu0}%
+${cpubar 7,255 cpu0}
+CPU1 usage:$alignr${cpu cpu1}%
+${cpubar 7,255 cpu1}
+CPU2 usage:$alignr${cpu cpu2}%
+${cpubar 7,255 cpu2}
+CPU3 usage:$alignr${cpu cpu3}%
+${cpubar 7,255 cpu3}
+${hr}
+WiFi:$alignr${addr wlp1s0}
+Download:$alignr${downspeed wlp1s0}
+${downspeedgraph wlp1s0}
+Upload:$alignr${upspeed wlp1s0}
+${upspeedgraph wlp1s0}
+${hr}
+CPU Temp:$alignr${hwmon 1 temp 1} C
