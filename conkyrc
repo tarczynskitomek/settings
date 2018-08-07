@@ -71,3 +71,5 @@ Upload:$alignr${upspeed wlp1s0}
 ${upspeedgraph wlp1s0}
 ${hr}
 CPU Temp:$alignr${hwmon 1 temp 1} C
+${hr}
+Battery:$alignr$battery
