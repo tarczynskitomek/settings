@@ -78,3 +78,13 @@ ${hr}
 CPU Temp:$alignr${hwmon 1 temp 1} C
 ${hr}
 Battery:$alignr$battery
+${hr}
+P R O C E S S
+${hr}
+$alignr IO  CPU MEM
+${top_io name 1}$alignr${top_io io_perc 1} ${top_io cpu 1} ${top_io mem 1}
+${top_io name 2}$alignr${top_io io_perc 2} ${top_io cpu 2} ${top_io mem 2}
+${top_io name 3}$alignr${top_io io_perc 3} ${top_io cpu 3} ${top_io mem 3}
+${top_io name 4}$alignr${top_io io_perc 4} ${top_io cpu 4} ${top_io mem 4}
+${top_io name 5}$alignr${top_io io_perc 5} ${top_io cpu 5} ${top_io mem 5}
+
