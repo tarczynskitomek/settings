@@ -98,7 +98,14 @@ syntax on
 colorscheme lucius
 LuciusDark
 set laststatus=2
-"
+
+" Line length colouring
+highlight ColorColumn ctermbg=gray
+set colorcolumn=121
+
+" Leading and traling whitespaces
+set listchars=trail:.
+set list
 "
 "
 "
