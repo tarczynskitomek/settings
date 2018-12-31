@@ -5,6 +5,7 @@ alias ghci='stack ghci'
 alias dc='docker-compose'
 alias sl="ls"
 alias python="python3"
+alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 
 cdp() {
   TEMP_PWD=`pwd`
