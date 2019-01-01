@@ -14,4 +14,5 @@ hardstatus string "%w"
 
 # create windows
 screen -t MC mc
+screen -t htop htop
 screen -t bash
