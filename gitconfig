@@ -26,3 +26,4 @@
     cam = commit --amend
     purr = pull --rebase
     coaa = commit -a --amend
+    back = checkout -

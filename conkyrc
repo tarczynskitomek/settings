@@ -58,8 +58,9 @@ Host:$alignr$nodename
 Uptime:$alignr$uptime
 RAM:$alignr$mem/$memmax
 ${memgraph 30,255 AAF5D0 00B35B}
+Root disk usage:$alignr${fs_used /}/${fs_size /}
+Data disk usage:$alignr${fs_used /mnt/sda1}/${fs_size /mnt/sda1}
 Swap usage:$alignr$swap/$swapmax
-Disk usage:$alignr${fs_used /}/${fs_size /}
 CPU0 usage:$alignr${cpu cpu0}%
 ${cpubar 7,255 cpu0}
 CPU1 usage:$alignr${cpu cpu1}%

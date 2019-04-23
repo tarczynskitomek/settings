@@ -27,8 +27,8 @@ set visualbell
 set encoding=utf-8
 "
 " Whitespace
-set wrap
-set textwidth=79
+set nowrap
+set textwidth=140
 set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
@@ -100,8 +100,8 @@ LuciusDark
 set laststatus=2
 
 " Line length colouring
-highlight ColorColumn ctermbg=gray
-set colorcolumn=121
+" highlight ColorColumn ctermbg=gray
+" set colorcolumn=121
 
 " Leading and traling whitespaces
 set listchars=trail:.
