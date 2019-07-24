@@ -27,3 +27,4 @@
     purr = pull --rebase
     coaa = commit -a --amend
     back = checkout -
+    pcb = push origin HEAD:$(git rev-parse --abbrev-ref HEAD)
