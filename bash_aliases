@@ -1,11 +1,13 @@
-#!/bin/bash
+#!/bin/zsh
 
-alias ls='ls -lh --color=auto'
-alias ghci='stack ghci'
+alias l="ls"
+alias ll='ls -lh --color=auto'
 alias dc='docker-compose'
 alias sl="ls"
-alias python="python3"
-alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
+alias gc="gcloud"
+alias k="kubectl"
+alias wttr="curl wttr.in/warsaw"
+alias t="terraform"
 
 cdp() {
   TEMP_PWD=`pwd`
@@ -15,3 +17,7 @@ cdp() {
   OLDPWD=$TEMP_PWD
 }
 
+alias ys="yarn start"
+alias yt="yarn test"
+alias k=kubectl
+alias pl="echo $?"
